@@ -8,103 +8,105 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="manifest" href="./favicon/site.webmanifest">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header class= "headband">
-        <h1>
 
-        <img src= "./asset/mail.png" alt= "Logo gmail">
-        Gmail
+        <img src= "./asset/gmail_logo_icon_169102.svg" alt= "Logo gmail">
 
-        </h1>
-        <nav class="nav-bar">
+        <nav class="navbar">
             <ul>
                 <li>
-                    <a href="#">POUR LES PROS</a>
+                    <a class="button" href="#">POUR LES PROS</a>
                 </li>
                 <li>
-                    <a href="#">CONNEXION</a>
+                    <a href="#connection-form">CONNEXION</a>
                 </li>
                 <li>
-                    <a href="#">CRÉER UN COMPTE</a>
+                    <a href="#inscription-form">CRÉER UN COMPTE</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <img src="./asset/home-hero.jpg" alt="image"> 
+        <section class="home">
 
-        <h2>
-            Retrouvez la fluidité et la simplicité de Gmail sur tous vos appareil
-        </h2>
-
-
-        <button>
-            CRÉER UN COMPTE
-        </button>
-
-        <h2>
-            Une boite de réception entièrement repensée
-        </h2>
-        <p>
-            Avec les nouveaxu onglets personnalisables, repérez immédiatemment les nouveaux messages et choisissez ceux que vous souhaitez lire en priorité.
-        </p>
-
-        <div class="inscription-form" role="form" aria-labelledby="inscription">
-            <fieldset>
-                <legend>
-                    Créer un compte
-                </legend>
-                <form action="" method="post">
-
-                <label for="user-name">Nom *</label>
-                <input type="text" id="user-name" name="nom"
-                placeholder="Votre nom" aria-required="true" required>
-
-                <label for="user-lastname">Prénom *</label>
-                <input type="text" id="user-lastname" name="prenom" 
-                placeholder="Votre prenom" aria-required="true" required>
-
-                <label for="email">Mail *</label>
-                <input type="email" id="email" name="email" 
-                placeholder="Votre mail" aria-required="true" required>
-
-                <label for="password">Choisir votre mot de passe *</label>
-                <input type="password" id="password" name="password" 
-                placeholder="Votre mot de passe" aria-required="true" required>
+            <h2>
+                Retrouvez la fluidité et la simplicité de Gmail sur tous vos appareils
                 
-                <input type="submit" value="Valider votre compte">
+                <button class="account-creation">
+                    CRÉER UN COMPTE
+                </button>
+            </h2>
 
-                </form>
+
+        </section>
+
+       
+        <section class="form">
+            <h2>
+                Une boite de réception entièrement repensée
+            </h2>
+            <p>
+                Avec les nouveaux onglets personnalisables, repérez immédiatemment les nouveaux messages et choisissez ceux que vous souhaitez lire en priorité.
+            </p>
+
+            <div class="connection-form" role="form" aria-labelledby="connection">
+                <fieldset>
+                    <legend>
+                        Connectez-vous à votre compte
+                    </legend>
+                    <form action="" method="post">
+
+                    <label for="email-co">Mail ou login *</label>
+                    <input type="email" id="email-co" name="email-co" 
+                    placeholder="Votre mail" aria-required="true" required>
+
+                    <label for="password-co">Mot de passe *</label>
+                    <input type="password" id="password-co" name="password-co" 
+                    placeholder="Votre mot de passe" aria-required="true" required>
                 
-            </fieldset>
-        </div>
+                    <input type="submit" value="Connexion à votre compte">
 
-        <div class="connection-form" role="form" aria-labelledby="connection">
-            <fieldset>
-                <legend>
-                    Connectez-vous à votre compte
-                </legend>
-                <form action="" method="post">
-
-                <label for="email-co">Mail ou login *</label>
-                <input type="email" id="email-co" name="email-co" 
-                placeholder="Votre mail" aria-required="true" required>
-
-                <label for="password-co">Mot de passe *</label>
-                <input type="password" id="password-co" name="password-co" 
-                placeholder="Votre mot de passe" aria-required="true" required>
+                    </form>
                 
-                <input type="submit" value="Connexion à votre compte">
+                </fieldset>
+            </div>
 
-                </form>
+            <div class="inscription-form" role="form" aria-labelledby="inscription">
+                <fieldset>
+                    <legend>
+                        Créer un compte
+                    </legend>
+                    <form action="" method="post">
+
+                    <label for="user-name">Nom *</label>
+                    <input type="text" id="user-name" name="nom"
+                    placeholder="Votre nom" aria-required="true" required>
+
+                    <label for="user-lastname">Prénom *</label>
+                    <input type="text" id="user-lastname" name="prenom" 
+                    placeholder="Votre prenom" aria-required="true" required>
+
+                    <label for="email">Mail *</label>
+                    <input type="email" id="email" name="email" 
+                    placeholder="Votre mail" aria-required="true" required>
+
+                    <label for="password">Choisir votre mot de passe *</label>
+                    <input type="password" id="password" name="password" 
+                    placeholder="Votre mot de passe" aria-required="true" required>
                 
-            </fieldset>
-        </div>
+                    <input type="submit" value="Valider votre compte">
+
+                    </form>
+                
+                </fieldset>
+            </div>
+        </section> 
     </main>
 
     <footer>

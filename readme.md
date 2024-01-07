@@ -9,7 +9,7 @@ Dans le cadre de mon BTS SIO option développement, nous devons faire la copie d
 
 ![charte](./asset/colors.png)
 
-**Police de caractère** : Open-Sans, sans-seril, 1.6rem
+**Police de caractère** : Open-Sans, sans-serif, 1.6rem
 
 **Couleur des boutons et items** : #dd5347
 
