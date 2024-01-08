@@ -3,7 +3,8 @@
 [Lien vers le site](https://cynthiaapura.github.io/projet_gmail/)
 
 ## Présentation du projet
- < ici ajouter un screen de la page index >
+
+![home-page](./asset/home-page.png)
 
 Dans le cadre de mon BTS SIO option développement, nous devons faire la copie de la page web du sote Gmail.
 
