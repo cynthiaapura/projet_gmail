@@ -1,5 +1,7 @@
 # Création d'une copie du site Gmail
 
+[Lien vers le site](https://cynthiaapura.github.io/projet_gmail/)
+
 ## Présentation du projet
  < ici ajouter un screen de la page index >
 
