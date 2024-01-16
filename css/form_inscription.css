@@ -1,0 +1,91 @@
+
+/* formulaire creer un compte */
+
+.inscription-form fieldset {
+    border-radius: 1rem;
+    border: solid .1rem rgb(0, 0, 0);
+}
+
+.inscription-form fieldset legend{
+    padding: 1rem;
+    font-size: large;
+    font-variant: small-caps; 
+}
+
+.inscription-form{
+    max-width: 90rem;
+    margin: 5rem auto 2rem;
+}
+
+.inscription-form form *{
+    display: block;
+    padding: 1rem 0;
+}
+
+.inscription-form input[type="checkbox"]{
+    width: auto;
+    margin: 2rem 0;
+}
+
+
+.inscription-form form input{
+    width: 100%;
+    line-height: 3.5rem;
+    padding: .5rem;
+    transition: all .6s ease-in-out;
+}
+
+.inscription-form form input[type="email"],
+.inscription-form form input[type="password"],
+.inscription-form form input[type="text"]{
+    
+    border-bottom: solid .1rem #ccc; 
+    background: rgba(244, 244, 244, 0.800);
+    width: 100%;
+
+}
+
+.incription-form form [placeholder]{
+    font-style: italic;
+    transition: all .6s ease-in-out;
+}
+.incription-form form [placeholder]:focus{
+    font-style: normal;
+}
+.incription-form form input:focus:not(.incription-form form input[type="submit"],
+.incription-form form input[type="checkbox"]){
+    outline: 0;
+    box-shadow: 0 0 2rem rgb(67, 52, 52);
+    width: 100%;
+    border-bottom: solid .1rem rgb(79, 79, 79);
+}
+form input[type="checkbox"]{
+    display: inline-block;
+    width: auto;
+}
+
+.connection-form form label.condition{
+    display: inline-block;
+    font-style: italic;
+}
+
+
+
+/* bouton valider */
+
+button[type="submit"]{
+
+    background-color: #0D6FEB ;
+    margin-top: 1rem;
+    cursor: pointer;
+    width: 35%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: medium;
+}
+
+.button_account{
+    
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,73 @@
+/* Formulaire connection */
+
+.form h2{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.form p{
+    text-align: center;
+}
+.connection-form fieldset{
+    border-radius: 1rem;
+    border: solid .1rem rgb(0, 0, 0);
+}
+.connection-form fieldset legend{
+    padding: 1rem;
+    font-size: large;
+    font-variant: small-caps;
+}
+.connection-form{
+    max-width: 90rem;
+    margin: 5rem auto 2rem;
+}
+.connection-form form *{
+    display: block;
+    padding: 1rem 0;
+}
+.connection-form input[type="checkbox"]{
+    width: auto;
+    margin: 2rem 0;
+}
+
+.connection-form form input{
+    width: 100%;
+    line-height: 3.5rem;
+    padding: .5rem;
+    transition: all .6s ease-in-out;
+}
+
+.connection-form form input[type="email"], 
+.connection-form form input[type="password"]{
+    
+    border-bottom: solid .1rem #ccc; 
+    background: rgba(244, 244, 244, 0.800);
+    width: 100%;
+
+}
+
+.connection-form form [placeholder]{
+    font-style: italic;
+    transition: all .6s ease-in-out;
+}
+.connection-form form [placeholder]:focus{
+    font-style: normal;
+}
+.connection-form form input:focus:not(.connection-form form input[type="submit"],
+.connection-form form input[type="checkbox"]){
+    outline: 0;
+    box-shadow: 0 0 2rem rgb(67, 52, 52);
+    width: 100%;
+    border-bottom: solid .1rem rgb(79, 79, 79);
+}
+form input[type="checkbox"]{
+    display: inline-block;
+    width: auto;
+}
+
+
+
+.connection-form form label.condition{
+    display: inline-block;
+    font-style: italic;
+}

@@ -1,0 +1,38 @@
+/* responsive */
+
+@media screen and (max-width: 768px) {
+
+
+    .headband {
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 100%;
+    }
+
+    .navbar li{
+        margin: 0;
+        margin-left: 10px;
+    }
+
+    .home h2 {
+        font-size: 4rem;
+        padding: 15% 60% 20% 8%;
+        filter: url("home-hero.jpg");
+    }
+
+    .account-creation {
+        padding: 2.5rem 1rem;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    
+
+    .home h2 {
+        font-size: 4rem;
+        padding: 15% 60% 20% 8%;
+        background-color: rgba(0, 0, 0, 0.235);
+    }
+}
