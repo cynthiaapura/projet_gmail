@@ -1,12 +1,19 @@
 
 /* formulaire creer un compte */
 
-.formInscription {
-    height: 100vh;
+#formInscription{
+    height: 100vh; 
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+}
+
+.formInscription h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
 }
 
 .inscription-form fieldset {
@@ -92,8 +99,7 @@ button[type="submit"]{
     font-size: medium;
 }
 
-.button_account{
-    
-    display: flex;
-    justify-content: center;
+.inscription-form form button {
+    margin: 2rem auto;
+    display: block;
 }

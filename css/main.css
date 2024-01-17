@@ -35,6 +35,9 @@
 
 /* main section home */
 
+h2{
+    display: block;
+}
 #scroll-btn{
     position: fixed;
     bottom: 20px;

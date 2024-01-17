@@ -1,17 +1,24 @@
 /* Formulaire connection */
 
-.form{
-    height: 100vh;
+#formSection{
+    height: 100vh; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15rem;
+}
+.form h2{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-}
-.form h2{
     font-size: 4rem;
 }
 .form p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-top: 1rem;
 }
 .connection-form fieldset{
@@ -67,4 +74,7 @@ form input[type="checkbox"]{
     display: inline-block;
     width: auto;
 }
-
+.connection-form form button {
+    margin: 2rem auto;
+    display: block;
+}
