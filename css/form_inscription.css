@@ -1,6 +1,13 @@
 
 /* formulaire creer un compte */
 
+.formInscription {
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
 
 .inscription-form fieldset {
     border-radius: 1rem;

@@ -7,11 +7,14 @@
         flex-direction: column;
         align-items: flex-start;
         max-width: 100%;
+
     }
 
-    .navbar li{
+    .navbar button {
         margin: 0;
         margin-left: 10px;
+        border: .1rem solid;
+        border-color: rgba(0, 0, 0, 0.09);
     }
 
     .home h2 {
@@ -28,7 +31,12 @@
 
 @media screen and (max-width: 480px) {
 
-    
+    .navbar button {
+        margin: 0;
+        margin-left: 10px;
+        border: .1rem solid;
+        border-color: rgba(0, 0, 0, 0.09);
+    }
 
     .home h2 {
         font-size: 4rem;

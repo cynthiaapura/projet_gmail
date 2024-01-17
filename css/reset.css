@@ -3,6 +3,8 @@
 html{
     font-size: 62.5%;
     font-weight: 300;
+    scroll-behavior: smooth;
+
 }
 body{
     font: 1.6rem "Open-Sans", sans-serif;

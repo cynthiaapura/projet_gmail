@@ -18,17 +18,9 @@
         <img src= "./asset/gmail_logo_icon_169102.svg" alt= "Logo gmail">
 
         <nav class="navbar">
-            <ul>
-                <li>
-                    <a class="button" href="#">POUR LES PROS</a>
-                </li>
-                <li>
-                    <a href="#create">CONNEXION</a>
-                </li>
-                <li>
-                    <a href="./!form_inscription.html">CRÉER UN COMPTE</a>
-                </li>
-            </ul>
+            <button id="button_pro" class="button" onclick="window.location.href='#'">POUR LES PROS</button>
+            <button id="connexion" class="button" onclick="window.location.href='#formSection'">CONNEXION</button>
+            <button id="create_button" class="button" onclick="window.location.href='./form_inscription.html'">CRÉER UN COMPTE</button>
         </nav>
     </header>
 
@@ -38,7 +30,7 @@
             <h2>
                 Retrouvez la fluidité et la simplicité de Gmail sur tous vos appareils
                 
-                <button class="account-creation">
+                <button class="account-creation" onclick="window.location.href='./form_inscription.html'">
                     CRÉER UN COMPTE
                 </button>
             </h2>
@@ -46,10 +38,11 @@
 
         </section>
 
-        <div id="scroll-btn" onclick=""> 
-            <img src="./asset/arrow.png" alt="" srcset="">
+        <div id="scroll-btn" onclick="window.location.href='#formSection'"> 
+            <img src="./asset/arrow.png" alt="button arrow">
         </div>
-        <section class="form">
+
+        <section class="form" id="formSection">
             <h2>
                 Une boite de réception entièrement repensée
             </h2>
@@ -57,12 +50,12 @@
                 Avec les nouveaux onglets personnalisables, repérez immédiatemment les nouveaux messages et choisissez ceux que vous souhaitez lire en priorité.
             </p>
 
-            <div class="connection-form" id="create" role="form" aria-labelledby="connection">
+            <div class="connection-form" id="connection" role="form" aria-labelledby="connection">
                 <fieldset>
                     <legend>
                         Connectez-vous à votre compte
                     </legend>
-                    <form action="" method="post">
+                    <form action="#" method="post">
 
                     <label for="email-co">Mail ou login *</label>
                     <input type="email" id="email-co" name="email-co" 
