@@ -1,46 +1,14 @@
 /* responsive */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1024px){
 
 
-    .headband {
-        flex-direction: column;
-        align-items: flex-start;
-        max-width: 100%;
-
-    }
-
-    .navbar button {
-        margin: 0;
-        margin-left: 10px;
-        border: .1rem solid;
-        border-color: rgba(0, 0, 0, 0.09);
-    }
-
-    .home h2 {
-        font-size: 4rem;
-        padding: 15% 60% 20% 8%;
-        filter: url("home-hero.jpg");
-    }
-
-    .account-creation {
-        padding: 2.5rem 1rem;
-    }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px){
 
-@media screen and (max-width: 480px) {
+}
 
-    .navbar button {
-        margin: 0;
-        margin-left: 10px;
-        border: .1rem solid;
-        border-color: rgba(0, 0, 0, 0.09);
-    }
+@media screen and (max-width: 767px){
 
-    .home h2 {
-        font-size: 4rem;
-        padding: 15% 60% 20% 8%;
-        background-color: rgba(0, 0, 0, 0.235);
-    }
 }

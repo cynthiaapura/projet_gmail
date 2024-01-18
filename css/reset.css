@@ -3,6 +3,7 @@
 html{
     font-size: 62.5%;
     font-weight: 300;
+    
     scroll-behavior: smooth;
 
 }
@@ -43,6 +44,6 @@ a{
 }
 
 :root{
-    --white: #fafafa;
+    --white: rgb(250, 250, 250);
     --item: #DD5347;
 }
