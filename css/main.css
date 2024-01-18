@@ -27,13 +27,15 @@ header img{
     border-radius: 2px;
     cursor: pointer;
     display: inline-flex;
-    background-color: var(--white)
+    background-color: var(--white);
+    font-size: inherit;
 }
 
 #create_button {
     background-color: var(--item);
     color: var(--white);
     padding: 22px ; 
+    font-size: inherit;
 }
 
 /* main section home */

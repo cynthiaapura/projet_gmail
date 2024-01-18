@@ -14,6 +14,7 @@
     align-items: center;
     justify-content: center;
     font-size: 4rem;
+    padding-top: 8rem;
 }
 
 .inscription-form fieldset {
@@ -102,4 +103,6 @@ button[type="submit"]{
 .inscription-form form button {
     margin: 2rem auto;
     display: block;
+    padding: 2rem;
+    border-radius: .4rem;
 }

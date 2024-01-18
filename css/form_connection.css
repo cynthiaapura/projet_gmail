@@ -77,4 +77,6 @@ form input[type="checkbox"]{
 .connection-form form button {
     margin: 2rem auto;
     display: block;
+    padding: 2rem;
+    border-radius: .4rem;
 }
