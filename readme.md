@@ -4,10 +4,16 @@
 
 ## Présentation du projet
 
+Dans le cadre de mon BTS SIO option développement, nous devons faire la copie de la page web du site Gmail, comme ci-dessous.
+
+## Home page
 ![home-page](./asset/home-page.png)
 
-Dans le cadre de mon BTS SIO option développement, nous devons faire la copie de la page web du sote Gmail.
+## Créer un compte
+![create](./asset/create.png)
 
+## Connexion au compte
+![connection](./asset/connection.png)
 ### Chartes graphique et typographique
 
 ![charte](./asset/colors.png)
@@ -28,7 +34,7 @@ Dans un premier temps j'ai réalisé la maquette statique, en travaillant d'abor
 
 Lorsque les deux étapes précedentes ont été finies et que le code HTML et CSS était bien validé, je me suis occupé de la partie dynamique en PHP.
 
-< ici ajouter les screens W3C >
+![w3c-validator](./asset/w3c.png)
 
 ### Étape 2 : Partie dynamique
 
