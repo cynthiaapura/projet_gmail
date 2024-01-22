@@ -13,34 +13,35 @@
 </head>
 
 <body>
-    <header class= "headband">
-
-        <img onclick="window.location.href='#'" 
-        src= "./asset/gmail_logo_icon_169102.svg" alt= "Logo gmail">
-
+    <header class="headband">
+        <a href="#">
+            <img src="./asset/gmail_logo_icon_169102.svg" alt="Logo gmail" aria-hidden="true">
+        </a>
+    
         <nav class="navbar">
-            <button id="button_pro" class="button" onclick="window.location.href='#'">POUR LES PROS</button>
-            <button id="connexion" class="button" onclick="window.location.href='#formSection'">CONNEXION</button>
-            <button id="create_button" class="button" onclick="window.location.href='./form_inscription.html'">CRÉER UN COMPTE</button>
+            <a href="#" id="button_pro" class="button">POUR LES PROS</a>
+            <a href="#formSection" id="connexion" class="button">CONNEXION</a>
+            <a href="./form_inscription.html" id="create_button" class="button">CRÉER UN COMPTE</a>
         </nav>
     </header>
-
+    
     <main>
         <section class="home">
-
             <h2>
                 Retrouvez la fluidité et la simplicité de Gmail sur tous vos appareils
-                
-                <button class="account-creation" onclick="window.location.href='./form_inscription.html'">
-                    CRÉER UN COMPTE
-                </button>
+                <a href="./form_inscription.html" class="account-creation">CRÉER UN COMPTE</a>
             </h2>
+        </section>
+    </main>
+    
 
 
         </section>
 
-        <div id="scroll-btn" onclick="window.location.href='#formSection'"> 
-            <img src="./asset/arrow.png" alt="fleche vers le bas">
+        <div id="scroll-btn"> 
+            <a href="#formSection">
+                <img src="./asset/arrow.png" alt="fleche vers le bas">
+            </a>
         </div>
 
         <section class="form" id="formSection">

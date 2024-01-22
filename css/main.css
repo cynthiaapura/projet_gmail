@@ -21,7 +21,7 @@ header img{
     cursor: pointer;
 }
 
-.navbar button{
+.navbar a{
     margin: auto 3rem 0 4rem;
     padding: 10px 20px;
     border-radius: 2px;
@@ -74,12 +74,13 @@ h2{
 .account-creation{
     background-color: var(--item);
     color: var(--white);
-    padding: 2.5rem 4.5rem;
+    padding: 2rem 4rem;
     border: none;
     border-radius: 2px;
     margin-top: 1rem;
     box-shadow: 0px 5px 12px #414141;
     cursor: pointer;
+    font-size: 2rem;
 }
 
 /* footer */
