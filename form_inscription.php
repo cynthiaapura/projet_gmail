@@ -12,22 +12,19 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <header class= "headband">
-
-        <img onclick="window.location.href='./index.html'"
-        src= "./asset/gmail_logo_icon_169102.svg" alt= "Logo gmail">
-
+    <header class="headband">
+        <a href="./index.php">
+            <img src="./asset/gmail_logo_icon_169102.svg" alt="Logo gmail">
+        </a>
+    
         <nav class="navbar">
-            <button id="button_pro" class="button" onclick="window.location.href='./index.html'">POUR LES PROS</button>
-            <button id="connexion" class="button" onclick="window.location.href='./index.html'">CONNEXION</button>
-            <button id="create_button" class="button">CRÉER UN COMPTE</button>
+            <a href="./index.php" id="button_pro" class="button">POUR LES PROS</a>
+            <a href="./index.php" id="connexion" class="button">CONNEXION</a>
+            <a href="#" id="create_button" class="button">CRÉER UN COMPTE</a>
         </nav>
     </header>
+    
     <main>
-        <?php
-            require_once __DIR__ . "/controller/controller_base.class.php";
-            ControllerBase::event();
-        ?>
         <section class="formInscription">
             <h2>
                 Bienvenue dans votre espace null
@@ -38,23 +35,23 @@
                     <legend>
                         Créer un compte
                     </legend>
-                    <form action="index.php" method="post">
+                    <form action="#" method="post">
 
                     <label for="user-name">Nom *</label>
                     <input type="text" id="user-name" name="nom"
-                    placeholder="Votre nom" aria-required="true" >
+                    placeholder="Votre nom" aria-required="true">
 
                     <label for="user-lastname">Prénom *</label>
                     <input type="text" id="user-lastname" name="prenom" 
-                    placeholder="Votre prenom" aria-required="true" >
+                    placeholder="Votre prenom" aria-required="true">
 
                     <label for="email">Mail *</label>
                     <input type="email" id="email" name="email" 
-                    placeholder="Votre mail" aria-required="true" >
+                    placeholder="Votre mail" aria-required="true">
 
                     <label for="password">Choisir votre mot de passe *</label>
                     <input type="password" id="password" name="password" 
-                    placeholder="Votre mot de passe" aria-required="true" >
+                    placeholder="Votre mot de passe" aria-required="true">
                 
                     
                     <button class="button_account" type="submit" value="Envoyer" aria-label="Valider votre compte">
