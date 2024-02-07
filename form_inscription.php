@@ -19,23 +19,34 @@
     
         <nav class="navbar">
             <a href="./index.php" id="button_pro" class="button">POUR LES PROS</a>
-            <a href="./index.php" id="connexion" class="button">CONNEXION</a>
+            <a href="/#formSection" id="connexion" class="button">CONNEXION</a>
             <a href="#" id="create_button" class="button">CRÉER UN COMPTE</a>
         </nav>
     </header>
     
     <main>
+        <?php
+            require_once __DIR__ . "/controller/controller_base.class.php";
+            ControllerBase::event();
+        ?>
+            <?php
+        include_once __DIR__."/controller/userManager.class.php";
+        ?>
+    
         <section class="formInscription">
             <h2>
-                Bienvenue dans votre espace null
+                Une boite de réception entièrement repensée
             </h2>
+            <p>
+                Avec les nouveaux onglets personnalisables, repérez immédiatemment les nouveaux messages et choisissez ceux que vous souhaitez lire en priorité.
+            </p>
 
             <div class="inscription-form" id="formInscription" role="form" aria-labelledby="formInscription">
                 <fieldset>
                     <legend>
                         Créer un compte
                     </legend>
-                    <form action="#" method="post">
+                    <form action="<?php print $_SERVER["PHP_SELF"]; ?>" method="post">
 
                     <label for="user-name">Nom *</label>
                     <input type="text" id="user-name" name="nom"

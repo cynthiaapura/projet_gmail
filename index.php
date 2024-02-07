@@ -24,7 +24,7 @@
             <a href="./form_inscription.php" id="create_button" class="button">CRÉER UN COMPTE</a>
         </nav>
     </header>
-    
+
     <main>
         <section class="home">
             <h2>
@@ -33,8 +33,6 @@
             </h2>
         </section>
     </main>
-    
-
 
         </section>
 
@@ -46,23 +44,20 @@
 
         <section class="form" id="formSection">
             <h2>
-                Une boite de réception entièrement repensée
+                Bienvenue dans votre espace null
             </h2>
-            <p>
-                Avec les nouveaux onglets personnalisables, repérez immédiatemment les nouveaux messages et choisissez ceux que vous souhaitez lire en priorité.
-            </p>
-
-            <div class="connection-form" id="connection" role="form" aria-labelledby="connection">
 
             <?php
                 require_once __DIR__ . "/controller/controller_base.class.php";
                 ControllerBase::event();
             ?>
+
+            <div class="connection-form" id="connection" role="form" aria-labelledby="connection">
                 <fieldset>
                     <legend>
                         Connectez-vous à votre compte
                     </legend>
-                    <form action="#" method="post">
+                    <form action="<?php print $_SERVER["PHP_SELF"]; ?>"  method="post">
 
                     <label for="email-co">Mail ou login *</label>
                     <input type="email" id="email-co" name="email-co" 

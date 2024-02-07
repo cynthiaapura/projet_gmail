@@ -16,7 +16,7 @@ class ControllerBase{
                 }
                 else{
                     
-                    die("<p> Champs Obligatoires!!! <a href=\"index.php\">Rechargez la page</a></p>");
+                    die("<p> Champs Obligatoires!!! <a href=\"form_inscription.php\">Rechargez la page</a></p>");
                 }
                 return false;
                 
