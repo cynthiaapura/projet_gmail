@@ -1,29 +1,11 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gmail</title>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="./favicon/site.webmanifest">
-    <link rel="stylesheet" href="./css/main.css">
-</head>
+<?php
+    include_once __DIR__."/include_co/connection_head.inc.php";
+?>
 
 <body>
-    <header class="headband">
-        <a href="#">
-            <img src="./asset/gmail_logo_icon_169102.svg" alt="Logo gmail" aria-hidden="true">
-        </a>
-    
-        <nav class="navbar">
-            <a href="#" id="button_pro" class="button">POUR LES PROS</a>
-            <a href="#formSection" id="connexion" class="button">CONNEXION</a>
-            <a href="./form_inscription.php" id="create_button" class="button">CRÉER UN COMPTE</a>
-        </nav>
-    </header>
+    <?php
+        include_once __DIR__."/include_co/connection_header.inc.php";
+    ?>
 
     <main>
         <section class="home">
@@ -33,8 +15,6 @@
             </h2>
         </section>
     </main>
-
-        </section>
 
         <div id="scroll-btn"> 
             <a href="#formSection">
@@ -48,41 +28,14 @@
             </h2>
 
             <?php
-                require_once __DIR__ . "/controller/controller_base.class.php";
-                ControllerBase::event();
+                include_once __DIR__."/include_co/connection_form.inc.php";
             ?>
-
-            <div class="connection-form" id="connection" role="form" aria-labelledby="connection">
-                <fieldset>
-                    <legend>
-                        Connectez-vous à votre compte
-                    </legend>
-                    <form action="<?php print $_SERVER["PHP_SELF"]; ?>"  method="post">
-
-                    <label for="email-co">Mail ou login *</label>
-                    <input type="email" id="email-co" name="email-co" 
-                    placeholder="Votre mail" aria-required="true" >
-
-                    <label for="password-co">Mot de passe *</label>
-                    <input type="password" id="password-co" name="password-co" 
-                    placeholder="Votre mot de passe" aria-required="true" >
-                
-                    <button class="button_account" type="submit" value="Envoyer" aria-label="Connexion à votre compte">
-                        Connexion à votre compte
-                    </button>
-
-                    </form>
-                
-                </fieldset>
-            </div>
 
         </section>
     </main>
 
-    <footer>
-        <p>
-            &copy; - MIT - <time datetime="2024-01-07">2024</time>
-        </p>
-    </footer>
+    <?php
+        include_once __DIR__."/include_co/connection_footer.inc.php";
+    ?>
 </body>
 </html>
