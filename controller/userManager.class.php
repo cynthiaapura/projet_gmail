@@ -26,7 +26,7 @@ class UserManager {
         
                 if ($_requete_Verif->rowCount() > 0) {
                     // L'utilisateur existe déjà, afficher un message d'erreur
-                    print '<p class="warning msg-alert">Cette adresse e-mail est déjà enregistrée. Choisissez une autre adresse e-mail.</p>';
+                    echo '<p class="warning msg-alert">Cette adresse e-mail est déjà enregistrée. Choisissez une autre adresse e-mail.</p>';
                 } 
                 else 
                 {
@@ -46,10 +46,10 @@ class UserManager {
                         // Exécuter la requête
                         $requete->execute();
                     
-                        print '<p class="warning msg-success">'.$login.' : Enregistrement réussi !</p>';
+                        echo '<p class="warning msg-success">'.$login.' : Enregistrement réussi !</p>';
         
                     } else {
-                        print '<p class="warning msg-alert">Tous les champs sont obligatoires ou mail invalide</p>';
+                        echo '<p class="warning msg-alert">Tous les champs sont obligatoires ou mail invalide</p>';
                     }
                 }
         
