@@ -5,6 +5,7 @@ class UserManager {
 
     static function insertUser() {
         require_once('config.php'); # Inclure le fichier de configuration de la base de données
+        $message = '';
 
         try {
             // Connexion à la base de données avec PDO
@@ -26,7 +27,7 @@ class UserManager {
         
                 if ($_requete_Verif->rowCount() > 0) {
                     // L'utilisateur existe déjà, afficher un message d'erreur
-                    echo '<p class="warning msg-alert">Cette adresse e-mail est déjà enregistrée. Choisissez une autre adresse e-mail.</p>';
+                    $message = '<p class="warning">Cette adresse e-mail est déjà enregistrée. Choisissez une autre adresse e-mail.</p>';
                 } 
                 else 
                 {
@@ -46,10 +47,10 @@ class UserManager {
                         // Exécuter la requête
                         $requete->execute();
                     
-                        echo '<p class="warning msg-success">'.$login.' : Enregistrement réussi !</p>';
+                        $message = '<p class="warning">'.$login.' : Enregistrement réussi !</p>';
         
                     } else {
-                        echo '<p class="warning msg-alert">Tous les champs sont obligatoires ou mail invalide</p>';
+                        $message = '<p class="warning">Tous les champs sont obligatoires ou mail invalide</p>';
                     }
                 }
         
@@ -57,8 +58,11 @@ class UserManager {
                 $connexion = null;
             }
         } catch (PDOException $e) {
-            echo '<p class="warning msg-alert">Erreur de connexion à la base de données : </p>' . $e->getMessage();
+            $message = '<p class="warning">Erreur de connexion à la base de données : </p>' . $e->getMessage();
         }
+
+        // Affiche le message d'erreur après le bouton "valider votre compte" dans le formulaire
+        echo $message;
     }
 }
 

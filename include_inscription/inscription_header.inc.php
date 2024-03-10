@@ -5,7 +5,7 @@
     
     <nav class="navbar">
         <a href="./index.php" id="button_pro" class="button">POUR LES PROS</a>
-        <a href="./index.php/connection" id="connexion" class="button">CONNEXION</a>
+        <a href="./index.php/" id="connexion" class="button">CONNEXION</a>
         <a href="#" id="create_button" class="button">CRÉER UN COMPTE</a>
     </nav>
 </header>

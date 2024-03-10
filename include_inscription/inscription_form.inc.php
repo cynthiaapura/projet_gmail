@@ -1,3 +1,10 @@
+<h2>
+    Une boite de réception entièrement repensée
+</h2>
+<p>
+    Avec les nouveaux onglets personnalisables, repérez immédiatemment les nouveaux messages et choisissez ceux que vous souhaitez lire en priorité.
+</p>
+
 <div class="inscription-form" id="formInscription" role="form" aria-labelledby="formInscription">
     <fieldset>
         <legend>
@@ -20,7 +27,6 @@
         <label for="password">Choisir votre mot de passe *</label>
         <input type="password" id="password" name="password" 
         placeholder="Votre mot de passe" aria-required="true">
-                
                     
         <button class="button_account" type="submit" value="Envoyer" aria-label="Valider votre compte">
             Valider votre compte
