@@ -30,15 +30,15 @@ function seConnecter($email, $motDePasse) {
       $_SESSION['id'] = $utilisateur['id'];
 
       // Rediriger vers la page d'accueil
-      header('Location: index.php');
+      header('Location: index.php#formSection');
       exit();
     } else {
       // Mot de passe incorrect
-      return "Mot de passe incorrect";
+      $_SESSION['message'] = 'Mot de passe incorrect';
     }
   } else {
     // Email non trouvé
-    return "Email non trouvé";
+    $_SESSION['message'] = 'Email non trouvé';
   }
 
   // Fermer la connexion
