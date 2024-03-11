@@ -1,10 +1,10 @@
 <?php
-    include_once __DIR__."/include_co/connection_head.inc.php";
+    include_once __DIR__."/include/connection_head.inc.php";
 ?>
 
 <body>
     <?php
-        include_once __DIR__."/include_co/connection_header.inc.php";
+        include_once __DIR__."/include/connection_header.inc.php";
     ?>
 
     <main>
@@ -28,14 +28,14 @@
             </h2>
 
             <?php
-                include_once __DIR__."/include_co/connection_form.inc.php";
+                include_once __DIR__."/include/connection_form.inc.php";
             ?>
 
         </section>
     </main>
 
     <?php
-        include_once __DIR__."/include_co/connection_footer.inc.php";
+        include_once __DIR__."/include/connection_footer.inc.php";
     ?>
 </body>
 </html>
