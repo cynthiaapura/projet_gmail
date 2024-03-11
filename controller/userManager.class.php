@@ -40,10 +40,8 @@ class UserManager {
                 
                         // Binder les paramètres
                         $requete->bindParam(1, $login);
-                        $requete->bindParam(2, $motDePasseHash);
-                       
-                      
-                
+                        $requete->bindParam(2, $motDePasseHash);                       
+
                         // Exécuter la requête
                         $requete->execute();
                     
