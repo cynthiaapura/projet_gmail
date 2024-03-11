@@ -28,6 +28,10 @@
             </h2>
 
             <?php
+                include_once __DIR__."/controller/connection.class.php";
+            ?>
+
+            <?php
                 include_once __DIR__."/include/connection_form.inc.php";
             ?>
 
