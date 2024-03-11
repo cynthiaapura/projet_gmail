@@ -9,6 +9,7 @@ require_once('config.php');
 
 // Fonction pour se connecter
 function seConnecter($email, $motDePasse) {
+
   // Connexion à la base de données
   $connexion = new PDO("mysql:host=$serveur;dbname=$nomBaseDeDonnees", $utilisateur, $motDePasse);
 
@@ -51,6 +52,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 
   $message = seConnecter($email, $motDePasse);
 }
+?>
 
 <div class="connection-form" id="connection" role="form" aria-labelledby="connection">
     <fieldset>
