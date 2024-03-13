@@ -45,7 +45,7 @@ class UserManager {
                         // Exécuter la requête
                         $requete->execute();
                     
-                        $message = '<p class="warning">'.$login.' : Enregistrement réussi !</p>';
+                        print $message = ' '.$login;
         
                     } else {
                         $message = '<p class="warning">Tous les champs sont obligatoires ou mail invalide</p>';
@@ -60,7 +60,7 @@ class UserManager {
         }
 
         // Affiche le message d'erreur après le bouton "valider votre compte" dans le formulaire
-        echo $message;
+        //echo $message;
     }
 }
 

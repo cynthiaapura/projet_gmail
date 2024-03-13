@@ -25,7 +25,15 @@
     margin: auto;
 }
 .warning{
+    top: 35%;
+    left: 50%;
     position: absolute;
+    width: max-content;
+    transform: translate(-50%, -35%);
+    font-weight: bolder;
+    color: #0a7e14;
+    font-size: 1.8rem;
+   
 }
 .inscription-form fieldset {
     border-radius: 1rem;
